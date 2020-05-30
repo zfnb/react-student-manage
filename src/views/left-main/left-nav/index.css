@@ -1,0 +1,38 @@
+.left-nav{
+    width:200px;
+   background: -webkit-linear-gradient(left, #ace, #f96);
+    position: absolute;
+    top:50px;
+    bottom: 0;
+    left:0;
+}
+.left-nav nav{
+    width:100%;
+    text-align: center;
+    margin-top:30px;
+}
+.left-nav  .manage{
+    width:80%;
+    text-align: center;
+    color:green;
+    margin-top:30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.left-nav nav .active{
+  color:#006600;
+}
+.left-nav nav a{
+    display: block;
+    text-decoration: none;
+    margin-top:20px;
+    color:#ffffff;
+    width:100%;
+    background-color: #aaa;
+    padding:5px 12px ;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.left-nav nav a:hover{
+    background-color: rgba(0,0,0,.5);
+}

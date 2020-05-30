@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import LeftMain from './views/left-main/left-main/LeftMain'
+import StudentLogin from "./views/login/student-login";
+import StudentRegister from "./views/login/student-register";
+import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+    Test() {
+        return <div>test</div>
+    }
+
+    render() {
+        return (
+            <Router>
+                <Switch>
+                    <Route exact path='/login' component={StudentLogin}/>
+                    <Route path='/home' component={LeftMain} />
+                    <Route path='/test' component={this.Test} />
+                    <Route exact path='/register' component={StudentRegister} />
+                    <Redirect to='/login' />
+                </Switch>
+            </Router>
+        );
+    }
 }
 
 export default App;

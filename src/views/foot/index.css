@@ -1,0 +1,12 @@
+footer {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(0.25turn, #000, #060, #100);
+    position: absolute;
+    bottom: 0px;
+}
+footer .main{
+    width:100%;
+    text-align: center;
+    line-height: 50px;
+}

@@ -1,0 +1,10 @@
+.right-main{
+  float: right;
+  position: absolute;
+  left:200px;
+  top:50px;
+  right:0;
+  bottom: 50px;
+  background:linear-gradient(to right,#ffffff,#cccccc,#eee);
+  padding:20px;
+}
